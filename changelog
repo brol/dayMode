@@ -1,3 +1,8 @@
+dayMode 1.1-RC5 - 19-07-2015 - Pierre Van Glabeke
+* ajout breadcrumb
+* modifs tpl
+* dc2.8 requis
+
 dayMode 1.1-RC4 - 22-04-2015 - Pierre Van Glabeke
 * modif url support
 * modif tpl (validation html5)

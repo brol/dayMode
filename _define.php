@@ -15,12 +15,12 @@ $this->registerModule(
 	/* Name */		"dayMode",
 	/* Description*/	"Provides daily archives and an associated calendar widget",
 	/* Author */		"Pep and contributors",
-	/* Version */		'1.1-RC4',
+	/* Version */		'1.1-RC5',
 	/* Properties */
 	array(
 		'permissions' => 'admin',
 		'type' => 'plugin',
-		'dc_min' => '2.7',
+		'dc_min' => '2.8',
 		'support' => 'http://forum.dotclear.org/viewtopic.php?id=48285',
 		'details' => 'http://plugins.dotaddict.org/dc2/details/dayMode'
 	)
