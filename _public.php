@@ -22,7 +22,16 @@ if (!$core->blog->settings->daymode->daymode_active) {
 #-----------------------------------------------------------
 $core->addBehavior('templateBeforeBlock',	array('dayModeBehaviors','block'));
 $core->addBehavior('publicBeforeDocument',	array('dayModeBehaviors','addTplPath'));
+$core->addBehavior('publicHeadContent',array('publicdayMode','publicHeadContent'));
 
+class publicdayMode
+{
+	public static function publicHeadContent($core)
+	{
+		$url = $core->blog->getQmarkURL().'pf='.basename(dirname(__FILE__));
+		echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/dayMode.css\" />\n";
+	}
+}
 #-----------------------------------------------------------
 # Overloads some Archives* dedicated template tags
 #-----------------------------------------------------------

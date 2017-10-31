@@ -98,7 +98,7 @@ class dcCalendar
 		}
 
 		$res =
-			'<table summary="'.__('Calendar').'">'.
+			'<table>'.
 			'<caption>'.
 			$link_prev.
 			dt::str('%B %Y',$this->base['ts']).
